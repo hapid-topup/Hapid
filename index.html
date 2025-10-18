@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Up Game Otomatis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Top Up Game Otomatis</h1>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h2>Isi Data Top Up</h2>
+      <form id="topupForm">
+        <label>ID Player:</label>
+        <input type="text" id="playerId" placeholder="Masukkan ID kamu" required>
+
+        <label>Pilih Game:</label>
+        <select id="game">
+          <option value="mlbb">Mobile Legends</option>
+          <option value="ff">Free Fire</option>
+          <option value="genshin">Genshin Impact</option>
+        </select>
+
+        <label>Jumlah Diamond/Kredit:</label>
+        <select id="amount">
+          <option value="5000">5.000</option>
+          <option value="10000">10.000</option>
+          <option value="20000">20.000</option>
+        </select>
+
+        <label>Metode Pembayaran:</label>
+        <select id="payment">
+          <option value="dana">DANA</option>
+          <option value="gopay">GoPay</option>
+          <option value="ovo">OVO</option>
+        </select>
+
+        <button type="submit">Top Up Sekarang</button>
+      </form>
+
+      <p id="status"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 TopUp Otomatis - by Golden</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
